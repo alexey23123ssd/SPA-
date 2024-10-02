@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">      
+</head>
+<body>
+
+    <header>
+        <img src="img/Rectangle 1.png" alt="bg-img" class="bg-img">
+        <div class="logo">
+            <img src="img/Clip path group.png" alt="mount-logo">
+            <img src="img/Vector.png" alt="text-logo">
+        </div>
+        <nav class="header-nav">
+            <a href="#">Главная</a>
+            <a href="#">Про гида</a>
+            <a href="#">Программа тура</a>
+            <a href="#">Стоимость</a>
+            <a href="#">Блог</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <button>Консультация</button>
+        <div class="burger-img"><img src="img/heroicons-solid_menu-alt-3.png" alt=""></div>
+        <div class="slider-menu">
+            <img src="img/close_icon.png" alt="" class="close-icon">
+            <ul>
+                <li>
+                    <img src="img/Frame.png" alt="">
+                    <a href="#">Про гида</a>
+                </li>
+                <li>
+                    <img src="img/Frame.png" alt="">
+                    <a href="#">Программа тура</a>
+                </li>
+                <li>
+                    <img src="img/Frame.png" alt="">
+                    <a href="#">Стоимость</a>
+                </li>
+                <li>
+                    <img src="img/Frame.png" alt="">
+                    <a href="#">Блог</a>
+                </li>
+                <li>
+                    <img src="img/Frame.png" alt="">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="programs-find__section">
+            <h1>Насладись прогулкой в горах<br>
+                с командой единомышленников</h1>
+            <div>
+                <div class="dropdown-list">
+                        <button class="tour-location">
+                        <p>Локация для тура</p>
+                        <img src="img/ep_arrow-down.png" alt="" class="arrow-img">
+                        </button>
+                    <div class="dropdown" id="first">
+                        <li>
+                            <a href="#">Горы</a>
+                        </li>
+                        <li>
+                            <a href="#">Озеро</a>
+                        </li>
+                        <li>
+                            <a href="#">Лес</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="dropdown-list">
+                    <button>
+                        <p>Дата похода</p>
+                        <img src="img/formkit_date.png" alt="" class="calendar-img">
+                    </button>
+                    <div class="dropdown" id="second"> 
+                        <div class="wrapper">
+
+                        </div> 
+                        <button class="left-btn" onclick="left()"><</button>
+                        <button class="right=btn" onclick="right()">></button>
+                    </div>
+                </div>
+             <div class="dropdown-list">
+                <button class="b">
+                    <p>Участники</p>
+                    <img src="img/ep_arrow-down.png" alt="" class="arrow-img">
+                </button>
+                <div class="dropdown" id="third">
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                </div>
+             </div>
+             <div>
+                <button class="find-btn">Найти программу</button>  
+             </div>
+            </div>
+        </section>
+        <section class="about__section">
+            <img src="img/Rectangle 5.png" alt="mount-img">
+            <img src="img/Rectangle 4.png" alt="cabin-img">
+            <div><h3>о нашем походе</h3>
+                <h2>Исследуйте все горные массивы мира вместе с нами</h2>
+                <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. 
+                    Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</p>
+                <button>Программа тура</button>
+            </div>
+        </section>
+        <section class="best-prog__section">
+        <div>
+            <h3>наше предложение</h3>
+            <h2>Лучшие программы для тебя</h2>
+            <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа</p>
+            <div>
+                <div class="svg-block">
+                    <img src="img/Frame.png" alt="">
+                </div>
+                <div class="text-block">
+                    <h4>Опытный гид</h4>
+                    <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                </div>
+            </div>
+            <div>
+                <div class="svg-block">
+                    <img src="img/Frame (1).png" alt="">
+                </div>
+                <div class="text-block">
+                    <h4>Безопасный поход</h4>
+                    <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                </div>
+            </div>
+            <div>
+                <div class="svg-block">
+                    <img src="img/Frame (2).png" alt="">
+                </div>
+                <div class="text-block">
+                    <h4>Лояльные цены</h4>
+                    <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                </div>
+            </div>
+            <button>Стоимость программ</button>
+        </div>
+        <div>
+            <img src="img/Rectangle 8.png" alt="">
+            <img src="img/Rectangle 9.png" alt="">
+            <img src="img/Rectangle 10.png" alt="">
+            <img src="img/Rectangle 11.png" alt="">
+        </div>
+        </section>
+        <section class="popular__section">
+            <h3>по версии отдыхающих</h3>
+            <h2>Популярные направления</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="img/фоновое изображение.png" alt="">
+                    <figcaption>
+                        <div>
+                            <h4>Озеро возле гор</h4>
+                            <p>романтическое приключение</p>
+                        </div>
+                        <div>
+                            <p>480 $</p>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/фоновое изображение (1).png" alt="">
+                    <figcaption>
+                        <div>
+                            <h4>Ночь в горах</h4>
+                            <p>в компании друзей</p>
+                        </div>
+                        <div>
+                            <p>500 $</p>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/фоновое изображение (2).png" alt="">
+                    <figcaption>
+                        <div>
+                            <h4>Йога в горах</h4>
+                            <p>для тех, кто забоится о себе</p>
+                        </div>
+                        <div>
+                            <p>230 $</p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <button>Рейтинг направлений</button>
+            </div>
+        </section>
+        <section class="mail__section">
+            <div>
+                <h3>актуально</h3>
+                <h2>Получайте полезные рассылки о путешествиях</h2>
+            </div>
+            <div>
+                <h4>Введите e-mail адрес</h4>
+                <input type="text" name="" id="" placeholder="name@domain.com">
+                <button>Подписаться на новости</button>
+                <p>подписываясь на новости, вы автоматически соглашаетесь с <a href="#">условиями обработки персональных данных</a> и <a href="#">правилами рекламных рассылок</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <h4>Компания «РумТибет»</h4>
+                <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.</p>
+                <a href="#">info@domain.com</a>
+                <a href="#">+7 (123) 456-78-90</a>
+                <div>
+                    <a href="#">
+                        <img src="img/ic_baseline-telegram.png" alt="telegram-icon">
+                    </a>
+                    <a href="#">
+                        <img src="img/Vector (1).png" alt="vk-icon">
+                    </a>
+                    <a href="#">
+                        <img src="img/mdi_pinterest.png" alt="pinterest-icon">
+                    </a>
+                    <a href="#">
+                        <img src="img/mdi_skype.png" alt="skype-icon">
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <ul>
+                    <h4>Наши услуги</h4>
+                    <li>
+                        <img src="img/Frame.png" alt="">
+                        <a href="#">Прогулки в горы летом</a>
+                    </li>
+                    <li>
+                        <img src="img/Frame.png" alt="">
+                        <a href="#">Зимние походы в горы</a>
+                    </li>
+                    <li>
+                        <img src="img/Frame.png" alt="">
+                        <a href="#">Посещение храмов в горах</a>
+                    </li>
+                    <li>
+                        <img src="img/Frame.png" alt="">
+                        <a href="#">Экстремальные виды туризма</a>
+                    </li>
+                    <li>
+                        <img src="img/Frame.png" alt="">
+                        <a href="#">Походы в джунглях Амазонии</a>
+                    </li>
+                    <li>
+                        <img src="img/Frame.png" alt="">
+                        <a href="#">Поездка в Африку</a>
+                    </li>
+                </ul>
+            </div>
+                
+            <div>
+                <ul>
+                    <h4>Важно для путешествий</h4>
+                    <li>
+                        <img src="img/Frame.png" alt="">
+                        <a href="#">Как собрать в долгий поход?</a>
+                    </li>
+                    <li>
+                        <img src="img/Frame.png" alt="">
+                        <a href="#">Жизненно важные предметы для похода</a>
+                    </li>
+                    <li>
+                        <img src="img/Frame.png" alt="">
+                        <a href="#">Медицинская страховка, гарантии безопасности</a>
+                    </li>
+                    <li>
+                        <img src="img/Frame.png" alt="">
+                        <a href="#">Если вы врач - загляните сюда</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
