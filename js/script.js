@@ -29,7 +29,7 @@ locationBtn.addEventListener('click',()=>{
 dropDown.addEventListener('click',(btn)=>{
     if(btn.target.matches('li')){
         const li = btn.target
-        locationBtn.innerText = li.innerText
+        locationBtn.innerText = li.innerText 
     }
 })
 
