@@ -45,8 +45,10 @@ calendarBtn.addEventListener('click',()=>{
 dropDownSecond.addEventListener('click',(btn)=>{
     if(btn.target.matches('p')){
         const p = btn.target
-        calendarBtn.innerText = p.innerText
-        calendarBtn.style.textAlign = "center"
+        let parentDiv = p.parentElement
+        let monthName = parentDiv.previousSibling.innerText
+        monthName = monthName.replace("ь","я")
+        calendarBtn.innerText = p.innerText + " " + monthName
     }
 })
 
@@ -61,8 +63,12 @@ participantsBtn.addEventListener('click',()=>{
 
 dropDownThird.addEventListener('click',(btn)=>{
     if(btn.target.matches('li')){
+        let person = 'человека'
         const li = btn.target
-        participantsBtn.innerText = li.innerText
+        if(li.innerText == "1"){
+            person = person.slice(person[0],person.length-1)
+        }
+        participantsBtn.innerText = li.innerText + " " + person
     }
 })
 
