@@ -76,10 +76,16 @@ findBtn.addEventListener('click',()=>{
     if(locationBtn !== locationBtnDefValue && participantsBtn !== participantsBtnDefValue && calendarBtn !== calendarBtnDefValue)
     {
         const locationContent = locationBtn.innerText
-        const participantsContent = Number(participantsBtn.innerText)
-        const calendarContent = Number(calendarBtn.innerText)
-        if(locationContent === 'Горы' && participantsContent>1 && calendarContent >=5){
-            window.location.href = 'https://bolshayastrana.com/kabardino-balkariya/priehlbruse-s-severa-i-yuga-v-mini-gruppe-2-cheloveka--251962'
+        const calendarContent = calendarBtn.innerText
+
+        if(locationContent === 'Горы' && calendarContent.includes('октября')){
+            window.location.href = 'https://clck.ru/3DjSrd'
+        }
+        if(locationContent === 'Озеро' && calendarContent.includes('октября')){
+            window.location.href = 'https://clck.ru/3DjTXS'
+        }
+        if(locationContent === 'Лес' && calendarContent.includes('октября')){
+            window.location.href = 'https://clck.ru/3DjSof'
         }
     }
 })
