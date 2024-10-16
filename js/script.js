@@ -93,17 +93,27 @@ findBtn.addEventListener('click',()=>{
 let month = new Date().getMonth()
 let day = new Date().getDate()
 
-const monthArr =[{month:"январь",days:31},
-{month:"февраль",days:28},{month:"март",days:30},{month:"апрель",days:30},{month:"май",days:31},
-{month:"июнь",days:30},{month:"июль",days:31},{month:"август",days:29},{month:"сентябрь",days:30},
-{month:"октябрь",days:31},{month:"ноябрь",days:30},{month:"декабрь",days:31}]       
+function request(url) {
+    return fetch(url)
+    .then((res) => {
+    return res.json();
+    })
+    .then((data) => {
+    return data;
+    })
+    .catch((error) => {
+    console.log(error);
+    });
+   } 
 
 
 let sliderArr;
 const percent = 500;
 let j = 0;
-window.addEventListener("load",()=>{
- show() 
+window.addEventListener("load",async()=>{
+const url = "https://alexey23123ssd.github.io/month.json"
+const response = await request(url);
+ show(response.month) 
  sliderArr = document.querySelectorAll(".class")
  for(let i of sliderArr){
  i.style.left = percent * j + "%"
@@ -111,13 +121,13 @@ window.addEventListener("load",()=>{
 }
 })
 
-function show(){
+function show(response){
     let cont;
     let monthName;
     let monthNum;
     let sliderElem;
     let i = 0;
-    for(let mont of monthArr){
+    for(let mont of response){
 
       if(i>=month){
        sliderElem = document.createElement("div")
